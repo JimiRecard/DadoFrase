@@ -16,9 +16,14 @@ def DiceWord():
 
 password = ''
 entropy = 0
+first = True
 
 for i in range(int(input("Informe a quantidade de palavras:"))):
-    password += DiceWord() + " "
+    if first:
+        password += DiceWord()
+        first = False
+    else:
+        password += " " + DiceWord()
     entropy += math.log2(7776)
 print(f"Sua senha é: {password}")
 print(f"Sua senha possui {round(entropy,2)} bits de entropia")
