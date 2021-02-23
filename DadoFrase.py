@@ -7,14 +7,15 @@ rng.random()
 
 
 def DiceWord():
-    a=''
+    a = ""
     for i in range(5):
-        a += str(rng.randint(1,6))
+        a += str(rng.randint(1, 6))
     print(a)
 
-    return(word_list.get(int(a)))
+    return word_list.get(int(a))
 
-password = ''
+
+password = ""
 entropy = 0
 first = True
 
