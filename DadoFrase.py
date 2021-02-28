@@ -1,9 +1,7 @@
-import random
-import math
+import random, math
 from word_list import word_list
 
 rng = random.SystemRandom()
-rng.random()
 
 
 def DiceWord():
