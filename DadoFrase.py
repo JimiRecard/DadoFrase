@@ -24,5 +24,5 @@ for i in range(int(input("Informe a quantidade de palavras:"))):
     else:
         password += " " + DiceWord()
     entropy += math.log2(7776)
-print(f"Sua senha é: {password}")
+print(f"Sua senha é: \"{password}\"")
 print(f"Sua senha possui {round(entropy,2)} bits de entropia")
